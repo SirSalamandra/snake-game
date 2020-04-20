@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<html>
+
+<body style="margin: 0; background-color: black;" id="body">
+    <style>
+        #arena {
+            background-color: purple;
+            position: relative;
+            z-index: 1;
+        }
+
+        #food {
+            height: 20px;
+            width: 20px;
+            background-color: blue;
+            position: absolute;
+            z-index: 4;
+        }
+
+        .snake {
+            height: 20px;
+            width: 20px;
+            background-color: white;
+            position: absolute;
+            border: 1px solid black;
+            box-sizing: border-box;
+            z-index: 2;
+        }
+    </style>
+    <script src="./lib/index.js"></script>
+    <script src="./lib/arena.js"></script>
+    <script src="./lib/snake.js"></script>
+    <script src="./lib/food.js"></script>
+
+    <div id="arena"></div>
+
+    <script>
+        startGame()
+    </script>
+</body>
+
+</html>
